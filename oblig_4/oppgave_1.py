@@ -35,5 +35,6 @@ print("\n")
 gjennomsnittAvGjennomsnitt = np.mean(resultatAvOmganger)
 stdAvGjennomsnitt = np.std(resultatAvOmganger, ddof=1)
 
-print(f"Gjennomsnittet av alle gjennomsnittene: {gjennomsnittAvGjennomsnitt:.3f}")
-print(f"Standardavviket av alle gjennomsnittene: {stdAvGjennomsnitt:.3f}")
+print(f"Gjennomsnittet av alle gjennomsnittene: {gjennomsnittAvGjennomsnitt}")
+print(f"Standardavviket av alle gjennomsnittene: {stdAvGjennomsnitt}")
+print(f"Nøyakig standardavvik: {(1.71 / math.sqrt(terningKast))}")
