@@ -5,6 +5,7 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #Oppgave 1b
+# Les inn brukerinput
 terningKast = int(input(f"Tast inn antall kast du ønsker: "))
 omganger = int(input(f"Tast inn antall omganger du ønsker å spille: "))
 
@@ -17,6 +18,7 @@ while i < omganger:
     for x in range(terningKast):
         sumAvTerning += random.randint(1, 6)
 
+# Gjennomfører terningkastene og beregner summen og gjennomsnittet av øynene på terningene i hver omgang.
         gjennomsnitt = sumAvTerning/terningKast
     print(f"Omgang: {[i+1]}\n"
             f"Antall kast: {terningKast}\n"
@@ -30,6 +32,7 @@ plt.ylabel('y')
 plt.hist(resultatAvOmganger, bins=30, edgecolor="black")
 plt.show()
 print("\n")
+
 #Oppgave 1c
 
 gjennomsnittAvGjennomsnitt = np.mean(resultatAvOmganger)
